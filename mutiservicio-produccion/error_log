@@ -1,0 +1,246 @@
+[25-Aug-2020 14:57:32 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 14:59:02 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user '
+sumaojha_wp790'@'localhost' (using password: YES) in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php:9
+Stack trace:
+#0 /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', '\r\nsumaojha_wp79...', 'sumaktec123', Array)
+#1 /home/sumaojha/mecanica.sumaktec.com/modelos/administrador.modelo.php(16): Conexion::conectar()
+#2 /home/sumaojha/mecanica.sumaktec.com/controladores/administrador.controlador.php(23): ModeloAdministrador::mdlMostrarAdministrador('administradores', 'email', 'miguel@gmail.co...')
+#3 /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/login.php(32): ControladorAdministrador->ctrIngresoAdministrador()
+#4 /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php(133): include('/home/sumaojha/...')
+#5 /home/sumaojha/mecanica.sumaktec.com/controladores/plantilla.controlador.php(6): include('/home/sumaojha/...')
+#6 /home/sumaojha/mecanica.sumaktec.com/index.php(38): Contr in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php on line 9
+[25-Aug-2020 15:01:20 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 15:01:20 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user '
+sumaojha_wp423'@'localhost' (using password: YES) in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php:9
+Stack trace:
+#0 /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', '\r\nsumaojha_wp42...', 'sumaktec123', Array)
+#1 /home/sumaojha/mecanica.sumaktec.com/modelos/administrador.modelo.php(16): Conexion::conectar()
+#2 /home/sumaojha/mecanica.sumaktec.com/controladores/administrador.controlador.php(23): ModeloAdministrador::mdlMostrarAdministrador('administradores', 'email', 'miguel@gmail.co...')
+#3 /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/login.php(32): ControladorAdministrador->ctrIngresoAdministrador()
+#4 /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php(133): include('/home/sumaojha/...')
+#5 /home/sumaojha/mecanica.sumaktec.com/controladores/plantilla.controlador.php(6): include('/home/sumaojha/...')
+#6 /home/sumaojha/mecanica.sumaktec.com/index.php(38): Contr in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php on line 9
+[25-Aug-2020 15:01:33 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user '
+sumaojha_wp423'@'localhost' (using password: YES) in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php:9
+Stack trace:
+#0 /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', '\r\nsumaojha_wp42...', 'sumaktec123', Array)
+#1 /home/sumaojha/mecanica.sumaktec.com/modelos/administrador.modelo.php(16): Conexion::conectar()
+#2 /home/sumaojha/mecanica.sumaktec.com/controladores/administrador.controlador.php(23): ModeloAdministrador::mdlMostrarAdministrador('administradores', 'email', 'juan@gmail.com')
+#3 /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/login.php(32): ControladorAdministrador->ctrIngresoAdministrador()
+#4 /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php(133): include('/home/sumaojha/...')
+#5 /home/sumaojha/mecanica.sumaktec.com/controladores/plantilla.controlador.php(6): include('/home/sumaojha/...')
+#6 /home/sumaojha/mecanica.sumaktec.com/index.php(38): Controlad in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php on line 9
+[25-Aug-2020 15:03:45 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 15:03:45 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user '
+sumaojha_wp423'@'localhost' (using password: YES) in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php:9
+Stack trace:
+#0 /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php(9): PDO->__construct('mysql:host=127....', '\r\nsumaojha_wp42...', 'sumaktec123', Array)
+#1 /home/sumaojha/mecanica.sumaktec.com/modelos/administrador.modelo.php(16): Conexion::conectar()
+#2 /home/sumaojha/mecanica.sumaktec.com/controladores/administrador.controlador.php(23): ModeloAdministrador::mdlMostrarAdministrador('administradores', 'email', 'juan@gmail.com')
+#3 /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/login.php(32): ControladorAdministrador->ctrIngresoAdministrador()
+#4 /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php(133): include('/home/sumaojha/...')
+#5 /home/sumaojha/mecanica.sumaktec.com/controladores/plantilla.controlador.php(6): include('/home/sumaojha/...')
+#6 /home/sumaojha/mecanica.sumaktec.com/index.php(38): Controlad in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php on line 9
+[25-Aug-2020 15:04:09 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user '
+sumaojha_wp423'@'localhost' (using password: YES) in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php:9
+Stack trace:
+#0 /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php(9): PDO->__construct('mysql:host=127....', '\r\nsumaojha_wp42...', 'sumaktec123', Array)
+#1 /home/sumaojha/mecanica.sumaktec.com/modelos/administrador.modelo.php(16): Conexion::conectar()
+#2 /home/sumaojha/mecanica.sumaktec.com/controladores/administrador.controlador.php(23): ModeloAdministrador::mdlMostrarAdministrador('administradores', 'email', 'juan@gmail.com')
+#3 /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/login.php(32): ControladorAdministrador->ctrIngresoAdministrador()
+#4 /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php(133): include('/home/sumaojha/...')
+#5 /home/sumaojha/mecanica.sumaktec.com/controladores/plantilla.controlador.php(6): include('/home/sumaojha/...')
+#6 /home/sumaojha/mecanica.sumaktec.com/index.php(38): Controlad in /home/sumaojha/mecanica.sumaktec.com/modelos/conexion.php on line 9
+[25-Aug-2020 15:06:21 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:06:21 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:06:21 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:06:21 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:06:21 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:06:28 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:06:28 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:06:28 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:06:28 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:06:28 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:17:06 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 15:17:06 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:17:06 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:17:06 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:17:06 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:17:06 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:17:22 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:17:22 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:17:22 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:17:22 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:17:22 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:19:34 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 15:19:34 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:19:34 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:19:34 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:19:34 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:19:34 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:19:36 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:19:36 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:19:36 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:19:36 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:19:36 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:21:55 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 15:22:47 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:22:47 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:22:47 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:22:47 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:22:47 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:24:11 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:24:11 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:24:11 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:24:11 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:24:11 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:24:44 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:24:44 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 15:24:44 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:24:44 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 15:24:44 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 17:22:07 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 17:29:59 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 17:29:59 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:29:59 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:29:59 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:30:01 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:30:01 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:30:01 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:38:22 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 17:38:22 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:38:22 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:38:22 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:50:06 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 17:50:06 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:50:06 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:50:06 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:50:11 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:50:11 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:50:11 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:55:12 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 17:55:12 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:55:12 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:55:12 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:55:24 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:55:24 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:55:24 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:56:56 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:56:56 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/inicio.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:56:56 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/inicio.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 129
+[25-Aug-2020 17:57:03 America/New_York] PHP Warning:  include(): https:// wrapper is disabled in the server configuration by allow_url_include=0 in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 123
+[25-Aug-2020 17:57:03 America/New_York] PHP Warning:  include(https://mecanica.sumaktec.com/modulos/salir.php): failed to open stream: no suitable wrapper could be found in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 123
+[25-Aug-2020 17:57:03 America/New_York] PHP Warning:  include(): Failed opening 'https://mecanica.sumaktec.com/modulos/salir.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/sumaojha/mecanica.sumaktec.com/vistas/plantilla.php on line 123
+[25-Aug-2020 17:58:09 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 17:58:09 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 17:58:09 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 17:58:09 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 17:58:09 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:05:37 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 18:08:49 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 18:08:57 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 18:08:57 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 18:08:57 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:08:57 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:08:57 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:11:17 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 18:11:17 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 18:11:17 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:11:17 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:11:17 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:11:35 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 18:11:35 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 18:11:35 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:11:35 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:11:35 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 18:26:51 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 18:36:22 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 19:05:48 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 19:05:48 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:05:48 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:05:48 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:05:48 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:05:48 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:34:54 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 19:36:40 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:36:40 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:36:40 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:36:40 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:36:40 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:40:00 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:40:00 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:40:00 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:40:00 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:40:00 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:43:02 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:43:02 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:43:02 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:43:02 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:43:02 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:46:16 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:46:16 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:46:16 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:46:16 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:46:16 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:51:45 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 19:54:45 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:54:45 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 19:54:45 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:54:45 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 19:54:45 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 20:45:39 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 23:38:41 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 23:38:45 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:38:45 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:38:45 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:38:45 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:38:45 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:43:19 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 23:44:10 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:44:10 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:44:10 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:44:10 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:44:10 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:46:06 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:46:06 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:46:06 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:46:06 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:46:06 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:49:12 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:49:12 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:49:12 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:49:12 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:49:12 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:53:36 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[25-Aug-2020 23:55:52 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:55:52 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[25-Aug-2020 23:55:52 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:55:52 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:55:52 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[25-Aug-2020 23:57:39 America/New_York] PHP Warning:  unlink(vistas/img/perfiles/571.jpg): No such file or directory in /home/sumaojha/mecanica.sumaktec.com/controladores/administrador.controlador.php on line 405
+[25-Aug-2020 23:59:30 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[26-Aug-2020 00:03:38 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[26-Aug-2020 00:03:38 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 570
+[26-Aug-2020 00:03:38 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[26-Aug-2020 00:03:38 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[26-Aug-2020 00:03:38 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/inicio.php on line 576
+[26-Aug-2020 00:30:05 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[26-Aug-2020 03:08:43 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[26-Aug-2020 03:24:00 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/mecanica.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[26-Aug-2020 17:32:13 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/multiservicio.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[26-Aug-2020 17:32:38 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sumaojha_multiservicio.administradores' doesn't exist in /home/sumaojha/multiservicio.sumaktec.com/modelos/administrador.modelo.php:20
+Stack trace:
+#0 /home/sumaojha/multiservicio.sumaktec.com/modelos/administrador.modelo.php(20): PDOStatement->execute()
+#1 /home/sumaojha/multiservicio.sumaktec.com/controladores/administrador.controlador.php(23): ModeloAdministrador::mdlMostrarAdministrador('administradores', 'email', 'miguel@gmail.co...')
+#2 /home/sumaojha/multiservicio.sumaktec.com/vistas/modulos/login.php(32): ControladorAdministrador->ctrIngresoAdministrador()
+#3 /home/sumaojha/multiservicio.sumaktec.com/vistas/plantilla.php(137): include('/home/sumaojha/...')
+#4 /home/sumaojha/multiservicio.sumaktec.com/controladores/plantilla.controlador.php(6): include('/home/sumaojha/...')
+#5 /home/sumaojha/multiservicio.sumaktec.com/index.php(38): ControladorPlantilla->plantilla()
+#6 {main}
+  thrown in /home/sumaojha/multiservicio.sumaktec.com/modelos/administrador.modelo.php on line 20
+[26-Aug-2020 17:37:56 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/sumaojha/multiservicio.sumaktec.com/extensiones/PHPMailer/PHPMailerAutoload.php on line 45
+[26-Aug-2020 17:37:59 America/New_York] PHP Notice:  Undefined variable: noRepetirFechas in /home/sumaojha/multiservicio.sumaktec.com/vistas/modulos/inicio.php on line 570
+[26-Aug-2020 17:37:59 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaojha/multiservicio.sumaktec.com/vistas/modulos/inicio.php on line 570
+[26-Aug-2020 17:37:59 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/multiservicio.sumaktec.com/vistas/modulos/inicio.php on line 576
+[26-Aug-2020 17:37:59 America/New_York] PHP Notice:  Undefined variable: sumaPagosMes in /home/sumaojha/multiservicio.sumaktec.com/vistas/modulos/inicio.php on line 576
+[26-Aug-2020 17:37:59 America/New_York] PHP Notice:  Undefined variable: value in /home/sumaojha/multiservicio.sumaktec.com/vistas/modulos/inicio.php on line 576

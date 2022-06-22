@@ -1,0 +1,16 @@
+# Impedir que se pueda ver el listado de contenidos de un directorio
+
+Options All -Indexes
+
+# Url Amigables
+
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9ñÑ_/]+)$ index.php?ruta=$1
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^multiservicio.sumaktec\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mulservicio.sumaktec\.com$
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://multiservicio.sumaktec.com/$1 [R=301,L,NE]
+
