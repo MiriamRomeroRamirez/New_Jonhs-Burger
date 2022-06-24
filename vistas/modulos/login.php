@@ -3,7 +3,7 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-                        <img class="align-content" src="vistas/img/plantilla/logo.jpg" alt="">
+                        <a><img src="vistas/img/plantilla/logo-burger.png" alt="Logo"><h1>Jonh's Burgers</h1></a>
                     </a>
                 </div>
                 <div class="login-form">
