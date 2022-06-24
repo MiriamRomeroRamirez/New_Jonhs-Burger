@@ -1,5 +1,0 @@
-[25-Aug-2020 18:13:42 America/New_York] PHP Deprecated:  Non-static method ControladorCompras::ctrNuevasCompras() should not be called statically in /home/sumaojha/mecanica.sumaktec.com/ajax/compras.ajax.php on line 88
-[25-Aug-2020 18:13:42 America/New_York] PHP Deprecated:  Non-static method ControladorCompras::ctrDetalleCompras() should not be called statically in /home/sumaojha/mecanica.sumaktec.com/ajax/compras.ajax.php on line 103
-[25-Aug-2020 18:13:42 America/New_York] PHP Notice:  Undefined offset: 1 in /home/sumaojha/mecanica.sumaktec.com/ajax/ventas.ajax.php on line 126
-[25-Aug-2020 19:44:55 America/New_York] PHP Deprecated:  Non-static method ControladorCompras::ctrMostrarCompras() should not be called statically in /home/sumaojha/mecanica.sumaktec.com/ajax/tablacompras.ajax.php on line 25
-[25-Aug-2020 19:45:37 America/New_York] PHP Deprecated:  Non-static method ControladorCompras::ctrMostrarCompras() should not be called statically in /home/sumaojha/mecanica.sumaktec.com/ajax/tablacomprobantescompra.ajax.php on line 25

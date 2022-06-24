@@ -1,2 +1,0 @@
-[25-Aug-2020 19:45:52 America/New_York] PHP Deprecated:  Non-static method ControladorCompras::ctrMostrarComprasInfo() should not be called statically in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/facturacompra.php on line 81
-[25-Aug-2020 19:45:52 America/New_York] PHP Deprecated:  Non-static method ControladorCompras::ctrMostrarDetallesComprasInfo() should not be called statically in /home/sumaojha/mecanica.sumaktec.com/vistas/modulos/facturacompra.php on line 205
