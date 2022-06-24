@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multiservicio</title>
+    <title>Iniciar Sesión - Administradores</title>
 
     <!--css link-->
     <link rel="apple-touch-icon" href="vistas/img/plantilla/logo-burger.png">
