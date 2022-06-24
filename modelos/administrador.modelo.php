@@ -10,7 +10,7 @@ class ModeloAdministrador
 
     public static function mdlMostrarAdministrador($tabla, $item, $valor)
     {
-
+        
         if ($item != null) {
 
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item ORDER BY id DESC");
@@ -59,7 +59,7 @@ class ModeloAdministrador
 
         }
 
-        $stmt->close();
+        $stmt-> close();
 
         $stmt = null;
 
@@ -87,7 +87,7 @@ class ModeloAdministrador
 
         }
 
-        $stmt->close();
+        $stmt->Conexion::close();
 
         $stmt = null;
 
