@@ -346,6 +346,7 @@ Googel Fonts  */
   transition: all 0.3s ease; }
 
 body {
+  background-color: #ffffcc;
   display: table;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -559,7 +560,7 @@ canvas {
 /* Global Styles */
 /* Main Styles */
 aside.left-panel {
-  background: #fff;
+  background: #ffc266;
   height: 100vh;
   padding: 0;
   vertical-align: top;
@@ -581,7 +582,7 @@ aside.left-panel {
   margin-left: 83px; }
 
 .navbar {
-  background: #fff;
+  background: #ffc266;
   border-radius: 0;
   border: none;
   display: inline-block;
@@ -821,7 +822,7 @@ aside.left-panel {
 
 /* Right panel */
 .right-panel {
-  background: #f1f2f7;
+  background: #ffa31a;
   margin-left: 280px;
   margin-top: 55px; }
   .right-panel .top-left {
@@ -842,7 +843,7 @@ aside.left-panel {
     min-height: 50px;
     margin: 0px;
     padding: 0px 15px;
-    background: #ffffff;
+    background: #ffa31a;
     border-bottom: 0px; }
     .right-panel .page-header h1 {
       font-size: 18px;
@@ -850,7 +851,7 @@ aside.left-panel {
     .right-panel .page-header .breadcrumb {
       margin: 0px;
       padding: 13.5px 0;
-      background: #fff;
+      background: #ffa31a;
       text-transform: capitalize; }
     .right-panel .page-header .breadcrumb > li + li:before {
       padding: 0 5px;
@@ -858,7 +859,7 @@ aside.left-panel {
       content: "/\00a0"; }
 
 .right-panel header.header {
-  background: #fff;
+  background: #ffa31a;
   border-bottom: 1px solid #e8e9ed;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -878,7 +879,7 @@ aside.left-panel {
   padding-top: 7px; }
 .right-panel .navbar-header {
   width: 100%;
-  background-color: #fff;
+  background-color: #ffa31a;
   padding: 0 1.25em 0 0; }
   .right-panel .navbar-header > a {
     display: inline-block; }
@@ -895,7 +896,7 @@ aside.left-panel {
   z-index: 999; }
 
 header.fixed-top {
-  background: #fff;
+  background: #ffa31a;
   padding: 20px; }
 
 .menutoggle {
@@ -920,7 +921,7 @@ header.fixed-top {
   width: 43px; }
 
 header .form-inline {
-  background: #131c21;
+  background: #ffa31a;
   display: none;
   height: 55px;
   margin: 0;
@@ -1734,7 +1735,7 @@ header .form-inline {
   margin: 8vh auto; }
 
 .login-form {
-  background: #ffffff;
+  background: #F0B838;
   padding: 30px 30px 20px;
   border-radius: 2px; }
 

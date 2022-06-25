@@ -4,7 +4,7 @@ class Ruta
 
     public static function ctrRuta()
     {
-        return "http://localhost:50/Jonhs-Burger/";
+        return "http://localhost/New_Jonhs-Burger/";
     }
 
 }
