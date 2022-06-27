@@ -15,7 +15,7 @@
                                 <ol class="breadcrumb text-right">
                                     <li><a href="inicio">Inicio</a></li>
                                     <!--<li><a href="#">Table</a></li>-->
-                                    <li class="active">Nueva Venta</li>
+                                    <li class="active">Agregar Venta</li>
                                 </ol>
                             </div>
                         </div>
@@ -95,7 +95,6 @@ foreach ($tipo as $key => $value) {
 
                                     <option value="">Selecionar tipo Comprobante</option>
                                     <option value="factura">Factura</option>
-                                    <option value="boleta">Boleta</option>
                                     <option value="ticket">Ticket</option>
                                   </select>
 
@@ -122,7 +121,7 @@ foreach ($tipo as $key => $value) {
                             <div class="col-md-8 col-xs-12">
                               <div class="input-group">
 
-                                  <span class="input-group-addon">Nro Docu:</i></span>
+                                  <span class="input-group-addon">Folio:</i></span>
 
                                   <input type="number" class="form-control input-lg productoDocumento" id="productoDocumento"  name="productoDocumento" >
 
@@ -152,14 +151,14 @@ foreach ($tipo as $key => $value) {
                                       <br>
                           <div class="col-md-10">
                                     <div class="form-group">
-                                      <button class="btn btn-primary" data-toggle="modal" data-target="#modalProductoMaquinas">
-                                           <i class="fa fa-plus" aria-hidden="true"></i>  Maquinas
+                                      <button class="btn btn-info" data-toggle="modal" data-target="#modalProductoBebida">
+                                           <i class="fa fa-plus" aria-hidden="true"></i>  Bebidas
                                           </button>
-                                          <button class="btn btn-primary" data-toggle="modal" data-target="#modalProductoRepuestos">
-                                           <i class="fa fa-plus" aria-hidden="true"></i>  Repuestos
+                                          <button class="btn btn-info" data-toggle="modal" data-target="#modalProductoHamburguesa">
+                                           <i class="fa fa-plus" aria-hidden="true"></i>  Hamburguesas
                                           </button>
-                                          <button class="btn btn-primary" data-toggle="modal" data-target="#modalProductoOtros">
-                                           <i class="fa fa-plus" aria-hidden="true"></i>  Otros
+                                          <button class="btn btn-info" data-toggle="modal" data-target="#modalProductoPostre">
+                                           <i class="fa fa-plus" aria-hidden="true"></i>  Postres
                                           </button>
                                     </div>
                             </div>
@@ -248,7 +247,7 @@ MODAL AGREGAR Maquinas
 ======================================-->
 
 
-<div id="modalProductoMaquinas" class="modal fade" role="dialog">
+<div id="modalProductoBebida" class="modal fade" role="dialog">
 
   <div class="modal-dialog modal-lg">
 
@@ -260,11 +259,11 @@ MODAL AGREGAR Maquinas
         CABEZA DEL MODAL
         ======================================-->
 
-        <div class="modal-header" style="background:#CAC7C7; color:white">
+        <div class="modal-header" style="background:#AED6F1; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <center><h4 class="modal-title">Buscar Maquinas</h4></center>
+          <center><h4 class="modal-title">Ver Bebidas</h4></center>
 
         </div>
 
@@ -315,7 +314,7 @@ MODAL AGREGAR Maquinas
 </div>
 
 
-<div id="modalProductoRepuestos" class="modal fade" role="dialog">
+<div id="modalProductoHamburguesa" class="modal fade" role="dialog">
 
   <div class="modal-dialog modal-lg">
 
@@ -327,11 +326,11 @@ MODAL AGREGAR Maquinas
         CABEZA DEL MODAL
         ======================================-->
 
-        <div class="modal-header" style="background:#CAC7C7; color:white">
+        <div class="modal-header" style="background:#F5B7B1; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <center><h4 class="modal-title">Buscar Producto Repuestos</h4></center>
+          <center><h4 class="modal-title">Ver hamburguesas</h4></center>
 
         </div>
 
@@ -385,7 +384,7 @@ MODAL AGREGAR Maquinas
 </div>
 
 
-<div id="modalProductoOtros" class="modal fade" role="dialog">
+<div id="modalProductoPostre" class="modal fade" role="dialog">
 
   <div class="modal-dialog modal-lg">
 
@@ -397,11 +396,11 @@ MODAL AGREGAR Maquinas
         CABEZA DEL MODAL
         ======================================-->
 
-        <div class="modal-header" style="background:#CAC7C7; color:white">
+        <div class="modal-header" style="background:#F9E79F; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <center><h4 class="modal-title">Buscar Producto Otros</h4></center>
+          <center><h4 class="modal-title">Ver productos</h4></center>
 
         </div>
 
