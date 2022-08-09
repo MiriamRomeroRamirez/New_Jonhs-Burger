@@ -1,7 +1,7 @@
-<aside id="left-panel" class="left-panel">
-        <nav class="navbar navbar-expand-sm navbar-default">
-            <div id="main-menu" class="main-menu collapse navbar-collapse">
-                <ul class="nav navbar-nav">
+<aside id="left-panel" class="left-panel bg-white">
+        <nav class="navbar navbar-expand-sm navbar-default bg-white">
+            <div id="main-menu" class="main-menu collapse navbar-collapse bg-white">
+                <ul class="nav navbar-nav bg-white">
                     <li class="active">
                         <a href="inicio"><i class="menu-icon fa fa-laptop"></i>Inicio </a>
                     </li>

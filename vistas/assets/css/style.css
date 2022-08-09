@@ -140,6 +140,22 @@ Googel Fonts  */
 /* Googel Fonts End  
 
 */
+.bg-cards-ventas {
+  background-color: #E0FFBE;
+}
+
+.bg-cards-compras {
+  background-color: #DCBEFF;
+}
+
+.bg-cards-productos {
+  background-color: #BED9FF;
+}
+
+.bg-cards-clientes {
+  background-color: #FFDBBE;
+}
+
 .bg-flat-color-1 {
   background: #00c292; }
 
@@ -346,7 +362,7 @@ Googel Fonts  */
   transition: all 0.3s ease; }
 
 body {
-  background-color: #ffffcc;
+  background-color: #ffffff;
   display: table;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -822,7 +838,7 @@ aside.left-panel {
 
 /* Right panel */
 .right-panel {
-  background: #ffa31a;
+  background: #FFFFFF;
   margin-left: 280px;
   margin-top: 55px; }
   .right-panel .top-left {
@@ -843,7 +859,7 @@ aside.left-panel {
     min-height: 50px;
     margin: 0px;
     padding: 0px 15px;
-    background: #ffa31a;
+    background: #ffffff;
     border-bottom: 0px; }
     .right-panel .page-header h1 {
       font-size: 18px;
@@ -851,7 +867,7 @@ aside.left-panel {
     .right-panel .page-header .breadcrumb {
       margin: 0px;
       padding: 13.5px 0;
-      background: #ffa31a;
+      background: #ffffff;
       text-transform: capitalize; }
     .right-panel .page-header .breadcrumb > li + li:before {
       padding: 0 5px;
@@ -879,7 +895,7 @@ aside.left-panel {
   padding-top: 7px; }
 .right-panel .navbar-header {
   width: 100%;
-  background-color: #ffa31a;
+  background-color: #ffffff;
   padding: 0 1.25em 0 0; }
   .right-panel .navbar-header > a {
     display: inline-block; }
