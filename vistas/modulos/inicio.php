@@ -89,7 +89,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                 <!-- Widgets  -->
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card bg-cards-ventas">
                             <div class="card-body">
                                 <div class="stat-widget-five">
                                     <div class="stat-icon dib flat-color-1">
@@ -97,7 +97,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text">S./ <span class="count"><?php echo $ventas["total"]; ?></span></div>
+                                            <div class="stat-text"><span class="count"><?php echo $ventas["total"]; ?></span></div>
                                             <div class="stat-heading">Ventas</div>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card bg-cards-compras">
                             <div class="card-body">
                                 <div class="stat-widget-five">
                                     <div class="stat-icon dib flat-color-2">
@@ -115,7 +115,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text">S./ <span class="count"><?php echo $compras["total"]; ?></span></div>
+                                            <div class="stat-text"><span class="count"><?php echo $compras["total"]; ?></span></div>
                                             <div class="stat-heading">Compras</div>
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card bg-cards-productos">
                             <div class="card-body">
                                 <div class="stat-widget-five">
                                     <div class="stat-icon dib flat-color-3">
@@ -143,7 +143,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="card">
+                        <div class="card bg-cards-clientes">
                             <div class="card-body">
                                 <div class="stat-widget-five">
                                     <div class="stat-icon dib flat-color-4">
@@ -319,7 +319,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                             </div>
                         </div>
 
-                        <div class="col-xl-4">
+                        <!-- <div class="col-xl-4">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-12">
                                     <div class="card br-0">
@@ -342,7 +342,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 

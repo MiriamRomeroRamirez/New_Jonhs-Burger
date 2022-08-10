@@ -53,10 +53,6 @@
                                             <th>Imagen</th>
                                             <th>Tipo</th>
                                             <th>Marca</th>
-                                            <th>Amperios</th>
-                                            <th>Tamaño</th>
-                                            <th>Watts</th>
-                                            <th>Hp</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>

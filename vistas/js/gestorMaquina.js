@@ -85,11 +85,6 @@ $(".tablaMaquina").on("click", ".btnEditarMaquina", function() {
             $("#editarEspecificacion").val(respuesta["especificaciones"]);
             $("#idMaquina").val(respuesta["id"]);
             $("#editarMarca").val(respuesta["marca"]);
-            $("#editarAmperios").val(respuesta["amperios"]);
-            $("#editarModelo").val(respuesta["modelo"]);
-            $("#editarTamano").val(respuesta["tamano"]);
-            $("#editarWatts").val(respuesta["watts"]);
-            $("#editarHp").val(respuesta["hp"]);
             $("#fotoActual").val(respuesta["imagen"]);
             $("#editarTipo").val(respuesta["id_tipomotor"]);
             if (respuesta["foto"] != "") {

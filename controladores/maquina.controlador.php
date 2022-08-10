@@ -100,10 +100,6 @@ REGISTRO DE NUEVO ADMINISTRADOR
                     "detalles"              => $_POST["nuevoDetalles"],
                     "especificaciones"      => $_POST["nuevoEspecificacion"],
                     "marca"                 => $_POST["nuevoMarca"],
-                    "amperios"              => $_POST["nuevoAmperios"],
-                    "tamano"                => $_POST["nuevoTamano"],
-                    "watts"                 => $_POST["nuevoWatts"],
-                    "hp"                    => $_POST["nuevoHp"],
                     "imagen"                => $ruta,
                     "id_tipomotor"          => $_POST["nuevoTipo"],
                     "fecha"                 => $fecha);
@@ -283,10 +279,6 @@ REGISTRO DE NUEVO ADMINISTRADOR
                     "detalles"          => $_POST["editarDetalles"],
                     "especificaciones"  => $_POST["editarEspecificacion"],
                     "marca"             => $_POST["editarMarca"],
-                    "amperios"          => $_POST["editarAmperios"],
-                    "tamano"            => $_POST["editarTamano"],
-                    "watts"             => $_POST["editarWatts"],
-                    "hp"                => $_POST["editarHp"],
                     "imagen"            => $ruta);
                 //echo '<script>alert("everre");</script>';
                 $respuesta = ModeloMaquina::mdlEditarMaquina($tabla, $datos);

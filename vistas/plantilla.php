@@ -6,11 +6,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multiservicio</title>
+    <title>Administradores</title>
 
     <!--css link-->
-    <link rel="apple-touch-icon" href="vistas/img/plantilla/icono.png">
-    <link rel="shortcut icon" href="vistas/img/plantilla/icono.png">
+    <link rel="apple-touch-icon" href="vistas/img/plantilla/logo-burger.png">
+    <link rel="shortcut icon" href="vistas/img/plantilla/logo-burger.png">
 
     <!--CSS LIBRERIAS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
@@ -84,7 +84,7 @@ session_start();
 
 
 </head>
-<body>
+<body class="">
 
     <!-- /menu -->
     <?php

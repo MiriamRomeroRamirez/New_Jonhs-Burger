@@ -62,7 +62,6 @@
                                             <th>Control</th>
                                         </tr>
                                     </thead>
-
                                 </table>
                             </div>
                         </div>

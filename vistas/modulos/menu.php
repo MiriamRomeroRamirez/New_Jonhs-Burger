@@ -1,7 +1,7 @@
-<aside id="left-panel" class="left-panel">
-        <nav class="navbar navbar-expand-sm navbar-default">
-            <div id="main-menu" class="main-menu collapse navbar-collapse">
-                <ul class="nav navbar-nav">
+<aside id="left-panel" class="left-panel bg-white">
+        <nav class="navbar navbar-expand-sm navbar-default bg-white">
+            <div id="main-menu" class="main-menu collapse navbar-collapse bg-white">
+                <ul class="nav navbar-nav bg-white">
                     <li class="active">
                         <a href="inicio"><i class="menu-icon fa fa-laptop"></i>Inicio </a>
                     </li>
@@ -19,8 +19,8 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bars"></i>Productos y otros</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-file"></i><a href="productos">Inventario</a></li>
-                            <li><i class="fa fa-puzzle-piece"></i><a href="maquinas">Maquinas</a></li>
+                            <!-- <li><i class="fa fa-file"></i><a href="productos">Inventario</a></li> -->
+                            <!-- <li><i class="fa fa-puzzle-piece"></i><a href="maquinas">Maquinas</a></li> -->
                             <li><i class="fa fa-id-badge"></i><a href="repuestos">Repuestos</a></li>
                             <li><i class="fa fa-bars"></i><a href="otros">Otros</a></li>
 
@@ -34,7 +34,7 @@
                      <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>ventas</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="tablaventas">Tabla ventas</a></li>
+                            <!-- <li><i class="menu-icon fa fa-th"></i><a href="tablaventas">Tabla ventas</a></li> -->
                             <li><i class="menu-icon fa fa-file"></i><a href="comprobantes_ventas">comprobantes</a></li>
                         </ul>
                     </li>
