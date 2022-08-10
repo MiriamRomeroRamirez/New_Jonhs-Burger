@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 26-08-2020 a las 20:51:55
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.2.27
+-- Servidor: localhost:3307
+-- Tiempo de generación: 10-08-2022 a las 06:39:05
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `multirepuestos`
+-- Base de datos: `multiservicio`
 --
 
 -- --------------------------------------------------------
@@ -46,7 +45,34 @@ CREATE TABLE `administradores` (
 INSERT INTO `administradores` (`id`, `nombre`, `email`, `foto`, `password`, `perfil`, `estado`, `fecha`) VALUES
 (8, 'juan person gomez', 'juan@gmail.com', 'vistas/img/perfiles/622.png', '$2a$07$asxx54ahjppf45sd87a5aucjhN.ZIaphOMG9P.d.DrYOYOjZ7kt2q', 'administrador', 1, '2020-08-25 22:34:59'),
 (11, 'miguel Tobias Matos', 'miguel@gmail.com', 'vistas/img/perfiles/979.jpg', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'administrador', 1, '2020-08-25 23:34:02'),
-(77, 'juangomila', 'juangomila@gmail.com', 'vistas/img/perfiles/709.png', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'administrador', 1, '2020-08-26 00:47:09');
+(77, 'juangomila', 'juangomila@gmail.com', 'vistas/img/perfiles/709.png', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'administrador', 1, '2020-08-26 00:47:09'),
+(79, 'Miriam Romero Ramirez', 'mirirr200@gmail.com', 'vistas/img/perfiles/575.jpg', '$2a$07$asxx54ahjppf45sd87a5auDIwUL94T0TPxB7RUA4Z3bmFkb/WiLXK', 'encargado', 1, '2022-08-09 04:56:43');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `categoria`
+--
+
+CREATE TABLE `categoria` (
+  `id_categoria` int(11) NOT NULL,
+  `descripcion` varchar(60) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`id_categoria`, `descripcion`) VALUES
+(1, '[crepas_dulces]'),
+(2, '[crepizzas]'),
+(3, '[complemento]'),
+(4, '[ingre_extras]'),
+(5, '[hamburguesas]'),
+(6, '[hot_dog]'),
+(7, '[refrescos]'),
+(8, '[papas]'),
+(9, '[crepas_especial]');
 
 -- --------------------------------------------------------
 
@@ -120,7 +146,8 @@ INSERT INTO `compras` (`id`, `fecha`, `comprobante`, `num_doc`, `id_proveedor`, 
 (65, '2020-08-25 23:50:11', 'boleta', 339, 0, 0, 19800, 1, 0.6, 'FR0-', 'PEN'),
 (66, '2020-08-25 23:50:49', 'ticket', 853, 0, 0, 9000, 1, 0, 'FR0-', 'PEN'),
 (67, '2020-08-26 04:38:12', 'ticket', 787, 0, 0, 2700, 1, 0, 'FR0-', 'PEN'),
-(68, '2020-08-26 04:39:35', 'factura', 683, 0, 0, 11700, 1, 0, 'FR0-', 'PEN');
+(68, '2020-08-26 04:39:35', 'factura', 683, 0, 0, 11700, 1, 0, 'FR0-', 'PEN'),
+(69, '2022-08-09 23:09:17', 'ticket', 751, 0, 0, 20700, 1, 32456, 'FR0-', 'PEN');
 
 -- --------------------------------------------------------
 
@@ -200,7 +227,8 @@ INSERT INTO `detalles_compras` (`idproductos`, `idcompra`, `cantidad`, `subtotal
 (0, 65, 0, 0, NULL, '', 0),
 (0, 66, 0, 0, NULL, '', 0),
 (0, 67, 0, 0, NULL, '', 0),
-(0, 68, 0, 0, NULL, '', 0);
+(0, 68, 0, 0, NULL, '', 0),
+(0, 69, 0, 0, NULL, '', 0);
 
 -- --------------------------------------------------------
 
@@ -243,9 +271,11 @@ INSERT INTO `detalles_ventas` (`idproductos`, `idventas`, `cantidad`, `precio`, 
 (29, 34, '1', 9000, NULL, 9000, 'norm a90'),
 (29, 36, '1', 900, NULL, 9000, 'norm a90'),
 (29, 38, '1', 9000, NULL, 9000, 'norm a90'),
+(29, 39, '2', 900, NULL, 18000, 'norm a90'),
 (30, 26, '1', 900, NULL, 900, 'michell'),
 (30, 33, '2', NULL, NULL, 1800, 'michell'),
 (30, 36, '2', NULL, NULL, 1800, 'michell'),
+(30, 39, '3', NULL, NULL, 2700, 'michell'),
 (31, 36, '1', NULL, NULL, 900, 'michell'),
 (33, 35, '3', 900, NULL, 2700, 'norma');
 
@@ -325,7 +355,7 @@ CREATE TABLE `empresa` (
 --
 
 INSERT INTO `empresa` (`id`, `nombre`, `razon_social`, `emp_codbar`, `emp_provincia`, `emp_distrito`, `emp_departamento`, `emp_direccion`, `emp_textpdffactura`, `nombre_comercial`, `emp_ruc`) VALUES
-(1, 'Multirepuestos industriales F & R', 'Multirepuestos industriales F & R', 'FR3535727727', 'Huanuco', 'Huanuco', 'Huanuco', 'los nogales pedro puelles 345', 'exp gravada', 'Multirepuestos industriales F & R', '65473839393993');
+(1, 'Jonh\'s Burger', 'Jonh\'s Burger', 'FR3535727727', 'Puebla', 'Puebla', 'Amalucan', 'Blvd. Atempan 15, Bosques Amalucan, 72310', 'exp gravada', 'Jonh\'s Burger', '65473839393993');
 
 -- --------------------------------------------------------
 
@@ -351,10 +381,6 @@ CREATE TABLE `maquinas` (
   `detalles` varchar(145) NOT NULL,
   `especificaciones` varchar(180) DEFAULT NULL,
   `marca` varchar(60) NOT NULL,
-  `amperios` varchar(60) DEFAULT NULL,
-  `tamano` varchar(60) NOT NULL,
-  `watts` varchar(60) NOT NULL,
-  `hp` varchar(60) NOT NULL,
   `imagen` varchar(240) DEFAULT NULL,
   `id_tipomotor` int(11) NOT NULL,
   `fecha` datetime NOT NULL
@@ -364,8 +390,96 @@ CREATE TABLE `maquinas` (
 -- Volcado de datos para la tabla `maquinas`
 --
 
-INSERT INTO `maquinas` (`id`, `nombre`, `detalles`, `especificaciones`, `marca`, `amperios`, `tamano`, `watts`, `hp`, `imagen`, `id_tipomotor`, `fecha`) VALUES
-(32, 'norm a90', 'nomrma 1.6 gaoslina', 'mantroca 60008706\'6', 'onda', '400', '50 cm', '5000', '4', 'vistas/img/maquina/844.jpg', 5, '2020-08-24 01:31:28');
+INSERT INTO `maquinas` (`id`, `nombre`, `detalles`, `especificaciones`, `marca`, `imagen`, `id_tipomotor`, `fecha`) VALUES
+(32, 'norm a90', 'nomrma 1.6 gaoslina', 'mantroca 60008706\'6', 'onda', 'vistas/img/maquina/844.jpg', 5, '2020-08-24 01:31:28');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `menu`
+--
+
+CREATE TABLE `menu` (
+  `id_producto` int(11) NOT NULL,
+  `descripcion` varchar(60) NOT NULL,
+  `precio` float NOT NULL,
+  `id_categoria` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `menu`
+--
+
+INSERT INTO `menu` (`id_producto`, `descripcion`, `precio`, `id_categoria`) VALUES
+(1, 'Nutella', 40, 1),
+(2, 'Philadelphia', 40, 1),
+(3, 'Crema de avellanas', 35, 1),
+(4, 'Cajeta', 35, 1),
+(5, 'Frambuesa', 30, 1),
+(6, 'Fresa', 30, 1),
+(7, 'Manzana', 30, 1),
+(8, 'Piña', 30, 1),
+(9, 'Zarzamora', 30, 1),
+(10, 'Carnes frías', 60, 2),
+(11, 'Hawaiana', 55, 2),
+(12, 'Peperoni', 50, 2),
+(13, 'Salchicha', 50, 2),
+(14, 'Jamón', 45, 2),
+(15, 'Queso manchego', 40, 2),
+(16, 'Malteada fresa', 55, 3),
+(17, 'Malteada oreo', 55, 3),
+(18, 'Malteada mazapan', 55, 3),
+(19, 'Malteada chocolate', 50, 3),
+(20, 'Malteada vainilla', 50, 3),
+(21, 'Helado chocolate', 17, 3),
+(22, 'Helado fresa', 17, 3),
+(23, 'Helado oreo', 17, 3),
+(24, 'Helado vainilla', 17, 3),
+(25, 'Plátano frito', 35, 3),
+(26, 'Kitkat', 20, 4),
+(27, 'Milky way', 20, 4),
+(28, 'M&Ms', 20, 4),
+(29, 'Snickers', 20, 4),
+(30, 'Ferrero y muibon', 15, 4),
+(31, 'Kinder delice', 15, 4),
+(32, 'Nuez', 15, 4),
+(33, 'Fresas', 10, 4),
+(34, 'Lechera', 10, 4),
+(35, 'Oreo', 10, 4),
+(36, 'Philadelphia', 10, 4),
+(37, 'Plátano', 10, 4),
+(38, 'Mazapan', 5, 4),
+(39, 'Carlos V', 5, 4),
+(40, 'Kranky', 5, 4),
+(41, 'Clásica', 45, 5),
+(42, 'Americana(Tocino)', 55, 5),
+(43, 'Hawaiana (quesillo, jamón, piña)', 65, 5),
+(44, 'Pizzaburguer (quesillo, peperonni)', 65, 5),
+(45, 'Clásica doble', 65, 5),
+(46, 'Sencillo', 25, 6),
+(47, 'Americana(Tocino)', 35, 6),
+(48, 'Hawaiana (quesillo, jamón, piña)', 40, 6),
+(49, 'Pizajocho (quessillo, peperonni)', 40, 6),
+(50, 'Refrescos', 17, 7),
+(51, 'Naturales', 45, 8),
+(52, 'Adobadas', 45, 8),
+(53, 'Chipotle', 45, 8),
+(54, 'Jalapeño', 45, 8),
+(55, 'Pimienta limón', 45, 8),
+(56, 'Queso', 45, 8),
+(57, 'Crepa gansito', 45, 9),
+(58, 'Crepa chocorrol', 45, 9),
+(59, 'Crepa Carlos V', 65, 9),
+(60, 'Crepa kranky', 65, 9),
+(61, 'Crepa hersheys', 65, 9),
+(62, 'Crepa mazapan', 65, 9),
+(63, 'Crepa kitkat', 65, 9),
+(64, 'Crepa milky way', 65, 9),
+(65, 'Crepa M&Ms', 65, 9),
+(66, 'Crepa snickers', 65, 9),
+(67, 'Crepa ferrero', 65, 9),
+(68, 'Crepa kinder delice', 65, 9),
+(69, 'Crepa oreo', 65, 9);
 
 -- --------------------------------------------------------
 
@@ -418,8 +532,8 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `cantidad`, `precio`, `id_otros`, `id_repuestos`, `id_maquinas`, `fecha`, `clasificacion`, `cod_producto`, `ventas`, `compras`, `estado`) VALUES
-(29, -1, 9000, 0, 0, 32, '2020-08-26 17:27:29', 'maquinas', '', 6, 0, 1),
-(30, 85, 900, 0, 15, 0, '2020-08-26 04:39:35', 'repuestos', '', 4, 0, 1),
+(29, -3, 9000, 0, 0, 32, '2022-08-09 23:09:18', 'maquinas', '', 8, 0, 1),
+(30, 82, 900, 0, 15, 0, '2022-08-09 23:09:19', 'repuestos', '', 7, 0, 1),
 (31, 54, 900, 8, 0, 0, '2020-08-26 04:39:35', 'otros', '', 1, 0, 1),
 (32, 1, 900, 0, 16, 0, '2020-08-26 04:34:58', 'repuestos', '', 0, 0, 1),
 (33, 10, 900, 0, 17, 0, '2020-08-26 04:38:13', 'repuestos', '', 3, 0, 1);
@@ -453,7 +567,7 @@ CREATE TABLE `proveedor` (
 --
 
 INSERT INTO `proveedor` (`id`, `nombre`, `apellidos`, `tienda`, `documento`, `direccion_web`, `tipo_persona`, `telefono`, `cod_proveedor`, `ruc`, `email`, `foto`, `estado`, `id_departamento`, `fecha`) VALUES
-(10, 'nogal sac', 'ronal vensec', 'nogal s.a.c', 8292992, 'nogal sac lima', '', '9492394', 'FR-N1312', 738993993, 'marielos@gmail.com', '', 1, 0, '2020-08-25 23:47:55');
+(10, 'Juan ', 'Ramirez Huerta', 'Grupo J. A. M. C', 8292992, 'jamc.com', 'natural', '9492394', 'FR-N1312', 738993993, 'marcianito200realnofake@gmail.com', '', 1, 0, '2022-08-09 06:20:30');
 
 -- --------------------------------------------------------
 
@@ -571,7 +685,8 @@ INSERT INTO `ventas` (`id`, `fecha`, `total`, `comprobante`, `detalles`, `num_do
 (35, '2020-08-26 04:38:13', 2700, 'ticket', NULL, 787, 9, 0, 1, 0, 'FR0-', 'PEN'),
 (36, '2020-08-26 04:39:35', 11700, 'factura', NULL, 683, 9, 0, 1, 0, 'FR0-', 'PEN'),
 (37, '2020-08-26 04:42:41', 9000, 'factura', NULL, 386, 0, 0, 1, 0, 'FR0-', 'PEN'),
-(38, '2020-08-26 17:27:29', 18000, 'ticket', NULL, 57, 9, 0, 1, 0, 'FR0-', 'PEN');
+(38, '2020-08-26 17:27:29', 18000, 'ticket', NULL, 57, 9, 0, 1, 0, 'FR0-', 'PEN'),
+(39, '2022-08-09 23:09:17', 20700, 'ticket', NULL, 751, 9, 0, 1, 32456, 'FR0-', 'PEN');
 
 --
 -- Índices para tablas volcadas
@@ -582,6 +697,12 @@ INSERT INTO `ventas` (`id`, `fecha`, `total`, `comprobante`, `detalles`, `num_do
 --
 ALTER TABLE `administradores`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `categoria`
+--
+ALTER TABLE `categoria`
+  ADD PRIMARY KEY (`id_categoria`);
 
 --
 -- Indices de la tabla `cliente`
@@ -644,6 +765,12 @@ ALTER TABLE `maquinas`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `menu`
+--
+ALTER TABLE `menu`
+  ADD PRIMARY KEY (`id_producto`);
+
+--
 -- Indices de la tabla `otros`
 --
 ALTER TABLE `otros`
@@ -693,7 +820,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `administradores`
 --
 ALTER TABLE `administradores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT de la tabla `cliente`
@@ -705,7 +832,7 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT de la tabla `comprobante`
@@ -777,83 +904,9 @@ ALTER TABLE `tipo_motor`
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-
-/*menuuu*/
-
-insert into Menu Values(1,'Nutella',40,1);
-insert into Menu Values(2,'Philadelphia',40,1);
-insert into Menu Values(3,'Crema de avellanas',35,1);
-insert into menu Values(4,'Cajeta',35,1);
-insert into menu Values(5,'Frambuesa',30,1);
-insert into menu Values(6,'Fresa',30,1);
-insert into menu Values(7,'Manzana',30,1);
-insert into menu Values(8,'Piña',30,1);
-insert into menu Values(9,'Zarzamora',30,1);
-insert into menu Values(10,'Carnes frías',60,2);
-insert into menu Values(11,'Hawaiana',55,2);
-insert into menu Values(12,'Peperoni',50,2);
-insert into menu Values(13,'Salchicha',50,2);
-insert into menu Values(14,'Jamón',45,2);
-insert into menu Values(15,'Queso manchego',40,2);
-insert into menu Values(16,'Malteada fresa',55,3);
-insert into menu Values(17,'Malteada oreo',55,3);
-insert into menu Values(18,'Malteada mazapan',55,3);
-insert into menu Values(19,'Malteada chocolate',50,3);
-insert into menu Values(20,'Malteada vainilla',50,3);
-insert into menu Values(21,'Helado chocolate',17,3);
-insert into menu Values(22,'Helado fresa',17,3);
-insert into menu Values(23,'Helado oreo',17,3);
-insert into menu Values(24,'Helado vainilla',17,3);
-insert into menu Values(25,'Plátano frito',35,3);
-insert into menu Values(26,'Kitkat',20,4);
-insert into menu Values(27,'Milky way',20,4);
-insert into menu Values(28,'M&Ms',20,4);
-insert into menu Values(29,'Snickers',20,4);
-insert into menu Values(30,'Ferrero y muibon',15,4);
-insert into menu Values(31,'Kinder delice',15,4);
-insert into menu Values(32,'Nuez',15,4);
-insert into menu Values(33,'Fresas',10,4);
-insert into menu Values(34,'Lechera',10,4);
-insert into menu Values(35,'Oreo',10,4);
-insert into menu Values(36,'Philadelphia',10,4);
-insert into menu Values(37,'Plátano',10,4);
-insert into menu Values(38,'Mazapan',5,4);
-insert into menu Values(39,'Carlos V',5,4);
-insert into menu Values(40,'Kranky',5,4);
-insert into menu Values(41,'Clásica',45,5);
-insert into menu Values(42,'Americana(Tocino)',55,5);
-insert into menu Values(43,'Hawaiana (quesillo, jamón, piña)',65,5);
-insert into menu Values(44,'Pizzaburguer (quesillo, peperonni)',65,5);
-insert into menu Values(45,'Clásica doble',65,5);
-insert into menu Values(46,'Sencillo',25,6);
-insert into menu Values(47,'Americana(Tocino)',35,6);
-insert into menu Values(48,'Hawaiana (quesillo, jamón, piña)',40,6);
-insert into menu Values(49,'Pizajocho (quessillo, peperonni)',40,6);
-insert into menu Values(50,'Refrescos',17,7);
-insert into menu Values(51,'Naturales',45,8);
-insert into menu Values(52,'Adobadas',45,8);
-insert into menu Values(53,'Chipotle',45,8);
-insert into menu Values(54,'Jalapeño',45,8);
-insert into menu Values(55,'Pimienta limón',45,8);
-insert into menu Values(56,'Queso',45,8);
-insert into menu Values(57,'Crepa gansito',45,9);
-insert into menu Values(58,'Crepa chocorrol',45,9);
-insert into menu Values(59,'Crepa Carlos V',65,9);
-insert into menu Values(60,'Crepa kranky',65,9);
-insert into menu Values(61,'Crepa hersheys',65,9);
-insert into menu Values(62,'Crepa mazapan',65,9);
-insert into menu Values(63,'Crepa kitkat',65,9);
-insert into menu Values(64,'Crepa milky way',65,9);
-insert into menu Values(65,'Crepa M&Ms',65,9);
-insert into menu Values(66,'Crepa snickers',65,9);
-insert into menu Values(67,'Crepa ferrero',65,9);
-insert into menu Values(68,'Crepa kinder delice',65,9);
-insert into menu Values(69,'Crepa oreo',65,9);
