@@ -319,7 +319,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                             </div>
                         </div>
 
-                        <div class="col-xl-4">
+                        <!-- <div class="col-xl-4">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-12">
                                     <div class="card br-0">
@@ -342,7 +342,7 @@ $noRepetirFechas = array_unique($arrayFechas);
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
