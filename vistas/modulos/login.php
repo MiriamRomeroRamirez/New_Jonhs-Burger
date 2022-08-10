@@ -2,11 +2,15 @@
         
         <div class="container">
       <!-- Example row of columns -->
-
+      
     <div class="row">
+        
         <div class="col-md-8">
-          <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 600px; width:100%;">
-					</div>
+            <div class="login-content">
+                <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px; width:50%;"></div>
+
+        </div>
+          
         </div>
         <div class="col-md-4">
         <div class="login-content">
