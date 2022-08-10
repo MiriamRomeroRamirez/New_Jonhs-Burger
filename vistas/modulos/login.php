@@ -6,7 +6,7 @@
                         <a><img src="vistas/img/plantilla/logo-burger.png" alt="Logo"><h1>Jonh's Burgers</h1></a>
                     </a>
                 </div>
-                <div class="login-form">
+                <div class="login-form bg-white">
                     <form method="post">
                         <div class="form-group">
                             <label>Email address</label>

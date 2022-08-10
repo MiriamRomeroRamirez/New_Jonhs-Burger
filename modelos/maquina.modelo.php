@@ -158,16 +158,12 @@ class ModeloMaquina
     public static function mdlIngresarMaquina($tabla, $datos)
     {
 
-        $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre, detalles, especificaciones,marca, amperios, tamano, watts, hp, imagen, id_tipomotor, fecha) VALUES (:nombre, :detalles, :especificaciones, :marca, :amperios, :tamano, :watts, :hp, :imagen, :id_tipomotor, :fecha)");
+        $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre, detalles, especificaciones,marca, imagen, id_tipomotor, fecha) VALUES (:nombre, :detalles, :especificaciones, :marca, :imagen, :id_tipomotor, :fecha)");
 
         $stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
         $stmt->bindParam(":detalles", $datos["detalles"], PDO::PARAM_STR);
         $stmt->bindParam(":especificaciones", $datos["especificaciones"], PDO::PARAM_STR);
         $stmt->bindParam(":marca", $datos["marca"], PDO::PARAM_STR);
-        $stmt->bindParam(":amperios", $datos["amperios"], PDO::PARAM_STR);
-        $stmt->bindParam(":tamano", $datos["tamano"], PDO::PARAM_STR);
-        $stmt->bindParam(":watts", $datos["watts"], PDO::PARAM_STR);
-        $stmt->bindParam(":hp", $datos["hp"], PDO::PARAM_STR);
         $stmt->bindParam(":imagen", $datos["imagen"], PDO::PARAM_STR);
         $stmt->bindParam(":id_tipomotor", $datos["id_tipomotor"], PDO::PARAM_STR);
         $stmt->bindParam(":fecha", $datos["fecha"], PDO::PARAM_STR);
@@ -194,16 +190,12 @@ class ModeloMaquina
     public static function mdlEditarMaquina($tabla, $datos)
     {
 
-        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombre = :nombre, detalles = :detalles, especificaciones = :especificaciones, marca = :marca, amperios = :amperios, tamano = :tamano, watts = :watts, hp = :hp, imagen = :imagen, id_tipomotor = :id_tipomotor WHERE id = :id");
+        $stmt = Conexion::conectar()->prepare("UPDATE $tabla SET nombre = :nombre, detalles = :detalles, especificaciones = :especificaciones, marca = :marca, imagen = :imagen, id_tipomotor = :id_tipomotor WHERE id = :id");
 
         $stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
         $stmt->bindParam(":detalles", $datos["detalles"], PDO::PARAM_STR);
         $stmt->bindParam(":especificaciones", $datos["especificaciones"], PDO::PARAM_STR);
         $stmt->bindParam(":marca", $datos["marca"], PDO::PARAM_STR);
-        $stmt->bindParam(":amperios", $datos["amperios"], PDO::PARAM_STR);
-        $stmt->bindParam(":tamano", $datos["tamano"], PDO::PARAM_STR);
-        $stmt->bindParam(":watts", $datos["watts"], PDO::PARAM_STR);
-        $stmt->bindParam(":hp", $datos["hp"], PDO::PARAM_STR);
         $stmt->bindParam(":imagen", $datos["imagen"], PDO::PARAM_STR);
         $stmt->bindParam(":id_tipomotor", $datos["id_tipomotor"], PDO::PARAM_INT);
         $stmt->bindParam(":id", $datos["id"], PDO::PARAM_INT);
